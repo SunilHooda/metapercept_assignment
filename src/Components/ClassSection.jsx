@@ -15,7 +15,10 @@ const ClassSection = () => {
           return (
             <div key={elem.ID}>
               <div>
-                <img src={elem.ImageUrl} alt="ADD PIC"></img>{" "}
+                <img
+                  src="https://fastly.picsum.photos/id/0/5000/3333.jpg?hmac=_j6ghY5fCfSD6tvtcV74zXivkJSPIfR9B8w34XeQmvU"
+                  alt="ADD PIC"
+                ></img>
               </div>
               <div>
                 <h3>{elem.Name}</h3>
