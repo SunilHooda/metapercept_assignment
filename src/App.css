@@ -1,38 +1,200 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Navbar {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  border-bottom: 1px solid gray;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Navbar > div {
+  width: 100%;
+  height: auto;
+  color: gray;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Navbar > div > p {
+  text-align: left;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.Navbar > div:nth-child(2) {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+}
+
+.Navbar > div:nth-child(2) > p {
+  font-size: 15px;
+}
+
+.Navbar > div:nth-child(2) > button {
+  color: skyblue;
+  border: 1px solid skyblue;
+  background-color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.TitleSection {
+  width: 100%;
+  height: 250px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  gap: 15px;
   color: white;
+  background-color: skyblue;
+  margin-top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.TitleSection > h3 {
+  font-size: 22px;
+  font-weight: normal;
+  letter-spacing: 2px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.TitleSection > p {
+  width: 50%;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+.TitleSection > button {
+  color: black;
+  border: none;
+  background-color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.HeroPart {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 40px;
+  padding-top: 50px;
+  background-color: rgb(237, 233, 233);
+}
+
+.Classes > h3 {
+  font-size: 22px;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+.Classes > p {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: gray;
+}
+
+.HeroSection {
+  width: 80%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 20px;
+}
+
+.HeroSection > div {
+  width: 100%;
+  height: 100%;
+  border: 1px solid darkgray;
+  border-radius: 5px;
+}
+
+.HeroSection > div > div:nth-child(1) {
+  width: 100%;
+  height: 150px;
+  background-color: rgb(44, 44, 44);
+}
+
+.HeroSection > div > div:nth-child(1) > img {
+  width: 100%;
+  height: 100%;
+}
+
+.HeroSection > div > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 5px;
+  margin: auto;
+  padding: 10px;
+}
+
+.HeroSection > div > div:nth-child(2) > h3 {
+  font-size: 17px;
+}
+
+.HeroSection > div > div:nth-child(2) > p {
+  font-size: 15px;
+  color: gray;
+}
+
+.HeroSection > div > div:nth-child(2) > button {
+  width: fit-content;
+  color: darkgray;
+  border: 1px solid black;
+  background-color: white;
+  padding: 6px 13px;
+  border-radius: 5px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.footer {
+  width: 80%;
+  height: 60px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.footer > p {
+  font-size: 14px;
+  color: gray;
+}
+
+.footer > button {
+  width: fit-content;
+  color: skyblue;
+  border: none;
+  background-color: white;
+  padding: 6px 13px;
+  border-radius: 5px;
+  font-size: 13px;
+  cursor: pointer;
 }
